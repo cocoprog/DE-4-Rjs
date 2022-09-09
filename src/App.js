@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import { Header, ItemListContainer} from './components';
+import { Header, ItemListContainer, Counters} from './components';
 
 function App() {
   return (
     <div className="App">      
       <Header />
-      <main className="App-content">
+      <main>
+      <section className="App-content">        
         <ItemListContainer greeting={'greeting'}/>
+        {/* Contador */}
+        <Counters />
         <img src={logo} className="App-logo" alt="logo" />
+        </section>
       </main>
     </div>
   );
